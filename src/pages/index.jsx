@@ -70,14 +70,14 @@ export default function Home() {
             <div className="flex flex-col w-300 items-center text-center justify-center">
 
               <Image
-
+                className={`rounded-3xl   ${gender == 'female' ? 'border-2 border-white' : {}}`}
                 src={femaleAvatar}
                 alt="female"
                 width={38}
                 height={100}
                 quality={100}
               />
-              <label className="text-center">Female</label>
+              <label className={`text-center rounded mt-3 ${gender == 'female' ? 'bg-gradient-to-br from-pink-400 to-pink-700' : {}} `}>Female</label>
             </div>
 
 
@@ -102,17 +102,17 @@ export default function Home() {
             <div className="flex flex-col items-center text-center justify-center">
 
               <Image
-
+                className={`rounded-3xl   ${gender == 'male' ? 'border-2 border-white' : {}}`}
                 src={maleAvatar}
                 alt="male"
                 width={36}
                 height={40}
                 quality={100}
               />
-              <label className="text-center">Male</label>
+              <label className={`text-center rounded mt-3 ${gender == 'male' ? 'bg-gradient-to-br from-blue-400 to-blue-700' : {}} `}>Male</label>
             </div>
           </div>
-          <button className="w-5/6 h-8 bg-purple-700 rounded-xl hover:bg-purple-500" type="submit">Login</button>
+          <button className="w-5/6 h-8 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl hover:from-purple-400 hover:to-purple-600" type="submit">Login</button>
         </form>
       </div>
 
