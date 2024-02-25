@@ -59,7 +59,7 @@ export default function Home() {
   return (
 
     // className="bg-no-repeat bg-cover bg-center backdrop-blur-lg" style={{ backgroundImage: "url(" + background.src + ")" }}
-    <main className="p-10 flex flex-col font-Montserrat box-border min-h-screen text-white w-full h-full bg-black">
+    <main className="p-10 flex flex-col font-Montserrat box-border min-h-screen text-white w-full h-full bg-gray-900">
 
       <div className="w-full h-full">
 
@@ -67,7 +67,7 @@ export default function Home() {
 
         <div className="flex flex-row font-bold text-center mb-16 gap-8">
 
-          <div className="flex flex-col items-center w-64 min-h-fit ">
+          <div className="flex flex-col items-center w-64 h-fit">
             <div className=" w-full rounded-md">
               <p className=" bg-gradient-to-br from-purple-500 to-purple-700 text-center font-bold rounded-xl mb-4 ">Online Users: {usersList.length}</p>
 
@@ -87,8 +87,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-gray-900 flex-1 h-[calc(100vh-9.5rem)] justify-end bg-no-repeat bg-cover bg-center" style={{ backgroundImage: "url(" + background.src + ")" }}>
-            <div className="flex flex-col border-4 border-b-0 h-[calc(100vh-13.5rem)] p-4 overflow-auto">
+          <div className="bg-gray-900 flex-1 h-[calc(100vh-9.5rem)] justify-end">
+            <div className="flex flex-col border-4 border-b-0 h-[calc(100vh-13.5rem)] p-4 overflow-auto bg-no-repeat bg-cover bg-center" style={{ backgroundImage: "url(" + background.src + ")" }}>
               {messagesList.map((message, index) => {
                 console.log(message.body);
                 var isMe = false;
