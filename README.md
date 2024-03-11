@@ -4,7 +4,7 @@ Online web app chat using NextJS (React)
 https://github.com/edent11/MyChat/assets/100879888/a0300c3f-74f9-417c-8084-7262a559297d
 
 ## Libraries
-- Socket.ip
+- Socket.io
 
 
 ## Project Tree
